@@ -1,0 +1,41 @@
+<title>Welcome to Bookie</title>
+<h1>Let Us Do All The Work</h1>
+
+    
+<div class="Click Here">
+  <button onclick="myFunction()" class="dropbtn">Drop Down</button>
+  <p></p>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="http://www.bbc.com">Home</a>
+    <a href="http://www.google.com">About Us</a>
+    <a href="http://www.taninkgroup.com">Contact</a>
+  </div>
+</div>
+
+<P></P>
+
+
+<img align ="middle" src = "http://cdn.pinthiscars.com/images/ferrari-enzo-black-and-white-wallpaper-1.jpg">
+
+<p></p>
+
+<%= link_to"contact", pages_contact_path %>
+<%= link_to"about", pages_about_path %>
+<%= link_to"home", pages_home_path %>
+
+<p></p>
+<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+	<div class="row">
+		<label for="name">Your name:</label><br />
+		<input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="email">Your email:</label><br />
+		<input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+	</div>
+	<div class="row">
+		<label for="message">Your message:</label><br />
+		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br />
+	</div>
+	<input id="submit_button" type="submit" value="Send email" />
+</form>						
